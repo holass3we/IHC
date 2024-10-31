@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCircuit - Entrenamiento Militar VR/AR</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        :root {
+            --primary: #1a2f4e;
+            --secondary: #2c97de;
+            --accent: #ff6b6b;
+            --text: #333;
+            --light: #f5f7fa;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text);
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 47, 78, 0.9), rgba(26, 47, 78, 0.9)),
+                        url('/api/placeholder/1920/1080') center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            padding-top: 4rem;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Features */
+        .features {
+            padding: 5rem 2rem;
+            background: var(--light);
+        }
+
+        .features-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        /* About */
+        .about {
+            padding: 5rem 2rem;
+            background: white;
+        }
+
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: #ff5252;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">DevCircuit</a>
+            <a href="#contact" class="button">Contactar</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Revolucionando el Entrenamiento Militar</h1>
+            <p>Simuladores avanzados de realidad virtual y aumentada para optimizar la formación y preparación de personal militar.</p>
+            <a href="#about" class="button">Conoce AFOLUS</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Entrenamiento Inmersivo</h3>
+                <p>Experimenta escenarios tácticos realistas en un entorno virtual seguro y controlado.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Análisis en Tiempo Real</h3>
+                <p>Seguimiento detallado del rendimiento y retroalimentación instantánea para mejorar el aprendizaje.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Personalización Avanzada</h3>
+                <p>Escenarios adaptables que se ajustan a las necesidades específicas de cada unidad militar.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Sobre DevCircuit</h2>
+                <p>Somos un equipo de estudiantes de ingeniería comprometidos con la innovación en el entrenamiento militar. Nuestra plataforma AFOLUS combina tecnología de punta con metodologías probadas para crear experiencias de aprendizaje únicas y efectivas.</p>
+                <br>
+                <p>Nos enfocamos en maximizar la eficiencia del entrenamiento, proporcionando análisis detallados del rendimiento y retroalimentación en tiempo real, reduciendo tiempo y recursos necesarios para alcanzar altos niveles de competencia.</p>
+            </div>
+            <img src="https://th.bing.com/th/id/OIP.n6fInGyJCzEP0ihdHvaogwHaFS?rs=1&pid=ImgDetMain" alt="Entrenamiento VR" style="width: 100%; border-radius: 8px;">
+        </div>
+    </section>
+</body>
+</html>
