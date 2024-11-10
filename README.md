@@ -3,7 +3,7 @@ Descripción_
 AFOLUS es una plataforma revolucionaria de entrenamiento militar que utiliza tecnologías de Realidad Virtual (VR) y Realidad Aumentada (AR) para crear simulaciones inmersivas y realistas. Desarrollada por DevCircuit, esta solución permite a personal militar y oficiales mejorar sus habilidades tácticas y capacidad de toma de decisiones en un entorno seguro y controlado.
 
 Equipo DevCircuit
-
+Carlos Quispe - Desarrollo VR/Frontend/
 Patrick Cahuana - Desarrollo VR/Frontend/Backend
 
 Segmentos Objetivo 🎯
